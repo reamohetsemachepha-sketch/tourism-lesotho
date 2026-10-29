@@ -1,0 +1,216 @@
+
+.container{
+    background-color: rgb(0, 187, 44);
+    padding: 60px;
+    margin: 20px;
+    border-radius: 10px;
+    border: solid rgba(18, 3, 3, 0.867) ;
+    width: 700px;
+    display: flex;
+
+}
+h2
+{
+    color: rgb(11, 69, 228);
+}
+h1
+{
+ color: darkgrey;
+}
+  .container_wrapper{
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+  }
+        nav{
+            background-image: url('Images/village.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 15px;
+
+        }
+        nav a{color: #e70297;
+        text-decoration: none;
+    margin-right: 30px;
+     font-size: 18px; }
+     nav a:hover{
+        color: yellow;
+     }
+
+    body{
+        background-image: url('Images/background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color:white ;
+    }
+    video{
+        width: 200px;
+        height: 200px;
+        display: flex;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    menu-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  list-style: none;
+}
+
+
+.menu-button::-webkit-details-marker {
+  display: none;
+}
+
+
+.menu-dropdown {
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.menu-dropdown a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.menu-dropdown a:hover {
+  background-color: #f1f1f1;
+}
+.about-heading h1{
+    color: white;
+    font-size: 33px;
+}
+.lesotho-flag{
+    width: 120px;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.booking-section {
+    Max-width: 850px;
+    Margin: 40px auto;
+    Padding: 30px;
+    Display: grid;
+    Grid-template-columns: 1fr 1.4fr;
+    Gap: 30px;
+    Align-items: start;
+    Background: rgba(35, 110, 45, 0.94);
+    Border: 1px solid rgba(255, 255, 255, 0.5);
+    Border-radius: 15px;
+    Box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    Color: white;
+    Box-sizing: border-box;
+}
+
+.booking-intro h2 {
+    Font-size: 27px;
+    Margin-top: 10px;
+    Margin-bottom: 15px;
+}
+
+.booking-intro p {
+    Line-height: 1.7;
+    Font-size: 15px;
+}
+
+.booking-form {
+    Display: grid;
+    Grid-template-columns: 1fr 1fr;
+    Gap: 18px;
+}
+
+.form-group {
+    Display: flex;
+    Flex-direction: column;
+    Gap: 7px;
+    Min-width: 0;
+}
+
+.form-group label {
+    Font-weight: bold;
+    Font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    Width: 100%;
+    Padding: 12px;
+    Border: 1px solid #ccc;
+    Border-radius: 6px;
+    Font-size: 14px;
+    Font-family: Arial, sans-serif;
+    Box-sizing: border-box;
+    Background: white;
+    Color: #222;
+}
+
+.form-group textarea {
+    Resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    Outline: 2px solid #f2d35e;
+    Border-color: #f2d35e;
+}
+
+.full-width {
+    Grid-column: 1 / -1;
+}
+
+.booking-btn {
+    Grid-column: 1 / -1;
+    Padding: 13px 20px;
+    Border: none;
+    Border-radius: 6px;
+    Background: #f2d35e;
+    Color: #18351d;
+    Font-size: 16px;
+    Font-weight: bold;
+    Cursor: pointer;
+    Transition: background 0.3s;
+}
+
+.booking-btn:hover {
+    Background: #fff;
+}
+@media (max-width: 650px) {
+    .booking-section {
+        Grid-template-columns: 1fr;
+        Margin: 20px 12px;
+        Padding: 20px;
+    }
+
+    .booking-form {
+        Grid-template-columns: 1fr;
+    }
+
+    .full-width,
+    .booking-btn {
+        Grid-column: 1;
+    }
+
+    .booking-intro h2 {
+        Font-size: 23px;
+    }
+}
+
+
+
